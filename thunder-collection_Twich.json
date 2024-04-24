@@ -1,0 +1,181 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Twich",
+    "collectionId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+    "dateExported": "2024-04-24T17:59:52.932Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8c56c10e-4907-4075-979f-bdb9dca9c9a8",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "register",
+            "url": "http://127.0.0.1:8080/twitch/v1/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-24T05:41:45.941Z",
+            "modified": "2024-04-24T05:41:45.941Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"test1\",\n  \"password\":\"123456\",\n  \"email\":\"test1@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5019a31e-3b1b-4e49-bf41-98ba78f4238c",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:8080/twitch/v1/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-24T05:41:45.942Z",
+            "modified": "2024-04-24T05:41:45.942Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"123456\",\n  \"email\":\"test1@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4b93d566-b883-46fc-9cb3-e8c3b07eb40e",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "ListarChanelID",
+            "url": "http://127.0.0.1:8080/twitch/v1/channels/661d8b477b2f6be4a563ca47",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2024-04-24T05:41:45.946Z",
+            "modified": "2024-04-24T05:41:45.946Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6574ae70-e238-4051-808b-1caf5ada46cd",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "ListarChanels",
+            "url": "http://127.0.0.1:8080/twitch/v1/channels",
+            "method": "GET",
+            "sortNum": 37500,
+            "created": "2024-04-24T05:41:45.945Z",
+            "modified": "2024-04-24T05:41:45.945Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4ffffc22-c894-434c-85ee-df8437747282",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "Find my Channel",
+            "url": "http://127.0.0.1:8080/twitch/v1/settings/channel",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-24T05:41:45.943Z",
+            "modified": "2024-04-24T05:41:45.943Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjFkOGIzZjdiMmY2YmU0YTU2M2NhNDQiLCJlbWFpbCI6ImF1a3lAZ21haWwuY29tIiwiaWF0IjoxNzEzMjEyNjEzLCJleHAiOjE3MTMyNDE0MTN9.l2dxpZfnbSOrDCSQWLEom4-jOy5_Pvq3dMTYiI4V6to"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "65e8933f-55ca-4a27-a28a-812905963571",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "SeguirChanels",
+            "url": "http://127.0.0.1:8080/twitch/v1/channels/follow",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-24T05:41:45.944Z",
+            "modified": "2024-04-24T05:41:45.944Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjFkOGIzZjdiMmY2YmU0YTU2M2NhNDQiLCJlbWFpbCI6ImF1a3lAZ21haWwuY29tIiwiaWF0IjoxNzEzMjEyNjEzLCJleHAiOjE3MTMyNDE0MTN9.l2dxpZfnbSOrDCSQWLEom4-jOy5_Pvq3dMTYiI4V6to"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"channelId\":\"661d8b477b2f6be4a563ca47\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fa391b3e-7828-4726-950a-3d889b492581",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "Lista de channels",
+            "url": "http://127.0.0.1:8080/twitch/v1/channels/followed",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-04-24T05:41:45.947Z",
+            "modified": "2024-04-24T05:41:45.947Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjFkOGIzZjdiMmY2YmU0YTU2M2NhNDQiLCJlbWFpbCI6ImF1a3lAZ21haWwuY29tIiwiaWF0IjoxNzEzMjEyNjEzLCJleHAiOjE3MTMyNDE0MTN9.l2dxpZfnbSOrDCSQWLEom4-jOy5_Pvq3dMTYiI4V6to"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "232d6350-ce9f-4ed9-a3ea-0e7ab00433bf",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "UpdateChannels",
+            "url": "http://127.0.0.1:8080/twitch/v1/settings/channel",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-04-24T05:41:45.948Z",
+            "modified": "2024-04-24T05:41:45.948Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjI4MTM1NGUwMWE1N2RjYjZkNjY1ZjkiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsImlhdCI6MTcxMzkwMjQzNiwiZXhwIjoxNzEzOTMxMjM2fQ.7aAtwpqhAXvxJwhPpxgR_EGty3NXRE6rU2a9hx8_38c"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Putin \",\n  \"title\":\"Rasputin\",\n  \"description\":\"Bienvenidos a Rusia\",\n  \"avatarUrl\":\"https://static.euronews.com/articles/stories/08/22/88/56/1200x675_cmsv2_71d11db7-cabc-5b15-a9ac-8df7d5bc303b-8228856.jpg\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cf1025bd-503c-49b3-944e-a0200925ac4d",
+            "colId": "e243c3d5-df59-417a-9b5e-007f8c5dbeba",
+            "containerId": "",
+            "name": "Change password",
+            "url": "http://127.0.0.1:8080/twitch/v1/settings/password",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2024-04-24T05:41:45.949Z",
+            "modified": "2024-04-24T05:41:45.949Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjFkOGIzZjdiMmY2YmU0YTU2M2NhNDQiLCJlbWFpbCI6ImF1a3lAZ21haWwuY29tIiwiaWF0IjoxNzEzMjEyNjEzLCJleHAiOjE3MTMyNDE0MTN9.l2dxpZfnbSOrDCSQWLEom4-jOy5_Pvq3dMTYiI4V6to"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\" : \"123456\",\n  \"newPassword\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "ref": "i_dlh_cV2ZkwrR6D9PQRziaUpef5Nf0sugPSNfEQnvPsbpXnSPFHYl9YFSVYSBoPK_gtpSWnmPkNceS3maIIhw"
+}
